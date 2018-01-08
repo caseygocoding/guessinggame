@@ -2,73 +2,68 @@
 <html lang="en">
   <head>
     <title>Guessing Game</title>
-
-    <!-- Bootstrap and CSS here-->
-    <style>
-      .center {
-        text-align: center;
-      }
-      ul {
-          list-style: none;
-          padding: 0;
-      }
-      img {
-          display: inline;
-          width: 200px;
-          height: 100px;
-      }
-      #footer {
-          width: 100%;
-          border-top: solid 2px black;
-          background-color: white;
-          position: fixed;
-          bottom: 0;
-      }
-    </style>
-
+    <!-- Bootstrap and CSS here -->
+    <link rel="stylesheet" type='text/css' href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet"
+  href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
   </head>
-  <body>
 
-      <div id='app'>
+  <body class='custom'>
+
+      <div id='app' class='center container'>
 
         <div id='headers'>
           <!-- Title and subtitles! -->
+          <h1 id='title'>Play the Guessing Game!</h1>
+          <h3 id='subtitle'>Guess a number between 1-100!</h3>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
+            <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+            <button id='submit' class='btn btn-success'>Go!</button>
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
+            <button id='reset' class='btn btn-warning'>Reset</button>
+            <button id='hint' class='btn btn-info'>Hint</button>
           </div>
         </div>
       </div>
 
-
-
-    <div id='footer'>
-        <div>
-          <div class=''>
-            <img src='fa-logo@2x.png'></img>
+      <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png' class='img-responsive center-block' alt="Fullstack Academy"></img>
           </div>
 
-          <div class=''>
-            <h4>Project by YOUR NAME HERE</h4>
+          <div class='col-sm-4'>
+            <h4>Project by Waiho Chan</h4>
           </div>
 
-          <div class=''>
-            <img src='grace_hopper_academy.png'></img>
+          <div class='col-sm-4'>
+            <img src='grace_hopper_academy.png' class='img-responsive center-block' alt="Grace Hopper Academy"></img>
           </div>
-
 
         </div>
-    </div>
+      </div>
 
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src='js/GuessingGame.js'></script>
   </body>
 </html>

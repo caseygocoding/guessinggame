@@ -1,20 +1,66 @@
-.center {
-    text-align: center;
-    }
-#input-parent {
-  width: 160px;
-  margin-left: auto;
-  margin-right: auto;
+/*
+  ========================================
+  1. All
+  2. List
+  3. Image
+  4. Footer
+  5. Input
+  ========================================
+*/
+
+/*
+  ========================================
+  1. All
+  ========================================
+*/
+
+body {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
 }
+.custom {  
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.center {
+  text-align: center;
+}
+
+/*
+  ========================================
+  2. List
+  ========================================
+*/
 ul {
     list-style: none;
     padding: 0;
 }
+.guess {
+  display: inline;
+  border: 1px solid #dfe2e5;
+  border-radius: 10%;
+  font-size: 60px;
+  padding: 0 25px;
+  background: white;
+}
+
+/*
+  ========================================
+  3. Image
+  ========================================
+*/
 img {
     display: inline;
     width: 200px;
     height: 100px;
 }
+
+/*
+  ========================================
+  4. Footer
+  ========================================
+*/
 #footer {
     width: 100%;
     border-top: solid 2px black;
@@ -22,3 +68,45 @@ img {
     position: fixed;
     bottom: 0;
 }
+
+/*
+  ========================================
+  5. Input
+  ========================================
+*/
+#player-input {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  font-size: 60px;
+}
+
+#submit {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+}
+
+#input-parent {
+  width: 160px;
+  margin: 5% auto 50px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
